@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<!--Head Tag-->
+	<head>
+		<!--Page Title-->
+		<title>HeadBanging</title>
+		
+		<!--META Tages-->
+		<!--Site Description-->
+		<meta name="description" content="
+		***The Description***
+		" />
+		<!--Site Keywords-->
+		<meta name="keywords" content="
+		***The Keywords***
+		"/>
+		<!--Site Settings-->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#ff4d4d" id="topThemeColor"/>
+		
+		<!--LINK Tages-->
+		<link rel="stylesheet" href="css/main.css" id="stylesheet" />
+		<link rel="icon" href="img/logo.png" />
+	</head>
+	
+	<!--Site/Content Body-->
+	<body onload="setTimeout(Start, 5)">
+		<div style="
+			position: fixed; width: 80%; height: 50vh; background: black;
+			color: white; border-radius: 20px; border: 2px solid white; padding: 10vh 20px;
+			z-index: 100; top: 50%; left: 50%; transform: translate(-50%, -50%);
+			font-size: 2em; text-align: center" onclick="this.style.display = 'none'";>
+			This site is best browsered with a mobile phone
+			or on the mobile view of the browser's dev tools.
+		</div>
+		<!--All the page content container-->
+		<div class="MainContainer">	
+			
+			<!--All the crazy 7 pages with background image-->
+			<div class="Content">
+				<!--the first page that shows the logo-->
+				<div class="firstLogoC contents">
+					<img src="img/logoCom-1.png" id="firstLogo" alt="HeadBanging HB"/>
+					<!--#firstLogo-->
+				</div>
+				
+				<!--the second content-->
+				<div class="secondCon contents">
+					<div id="secondConChild">
+						<h2 id="head1"></h2>
+						<p id="parg1"></p>
+						<!--#secondConChild-->
+					</div>
+					<!--#secondCon-->
+				</div>
+				
+				<!--the third content-->
+				<div class="thirdCon contents">
+					<h2 id="head2">That Is It!</h2>
+					<p id="parg2">
+						We told you, being able to have such responsive 
+						site is challenging and needs a really hard work, but for 
+						our clients, we give all the efforts we have to be able to stay in 
+						their mind forever. 
+					</p>
+					<!--#thirdCon-->
+				</div>
+				
+				<!--the fourth content-->
+				<div class="fourthCon contents">
+					<img src="img/paleLogo.png" id="logo2" alt="HeadBanging Pale Logo"/>
+					<div class="fourthConChild">
+						<h2 id="head3">How Can It Help You?</h2>
+						<p id="parg3">
+							Growing in your major with a competitive website will
+							make it easy for audience to look for your website. 
+							And new visitors would save it and share it with 
+							friends uncontrollably as a discovery for them. 
+						</p>
+						<!--#fourthConChild-->
+					</div>
+					<!--#fourthCon-->
+				</div>
+				
+				<!--the fifth content-->
+				<div class="fifthCon contents">
+					<br/><br/><br/><br/>
+					<h2 id="head4">Business Ouwners</h2>
+					<p id="parg4">
+						Of course we don't encourage big businesses for
+						such sites since they love formality in everything,
+						<a href="https://mohdev.bitbucket.io/HIB/">but 
+						we can make it modern and creative, too like this 
+						one called HIB</a>. 
+					</p>
+					<img src="img/paleLogoName.png" id="paleLogoName" alt="HeadBanging Pale Logo Name"/>
+					<!--#fifthCon-->
+				</div>
+				
+				<!--the sixth content-->
+				<div class="sixthCon contents">
+					<div class="sixthConChild">
+						<img src="img/logoCom-2.png" width="100%" alt="HeadBanging Logo"/>
+						<h2 id="head5">Who Really Need Like Those Sites?</h2>
+						<p id="parg5">
+							Industries that want to be exciting for its audience
+							like Game industry, Music industry, or any other 
+							entertainment network can create such thing to 
+							stand out from the other competitors and be able 
+							to surprise its customers and provide them a 
+							special experience.
+						</p>
+						<!--#sixthConChild-->
+					</div>
+					<!--#sixthCon-->
+				</div>
+				
+				<!--the last content-->
+				<div class="lastCon contents">
+					
+					<p id="fade"></p>
+					<!--#lastCon-->
+				</div>
+				<!--#Content-->
+			</div>
+			
+			<!--The last dark fade page with text on it-->
+			<div id="lastFade">
+				<img src="img/logo.svg" id="lastLogo" alt="HeadBanging HB"/>
+				<!--#lastFade-->
+			</div>
+			<!--#MainContainer-->
+		</div>
+		<!--To set the page offset-->
+		<div id="pagesMgr"></div>
+		<div id="lastParticles" class="particles"></div>
+		<!--Javascript Connector-->
+		<script src="js/main.js"></script>
+		<script src="js/lib/particles.js"></script>
+		<script src="js/particlesMgr.js"></script>
+	</body>
+</html>
