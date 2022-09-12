@@ -1,0 +1,264 @@
+/*
+***Main Colors***
+
+Orange{
+#ff811a
+rgb(255, 129, 26)
+hsl(27, 100%, 55%)
+}
+
+Purple{
+#f63c74
+rgb(246, 60, 116)
+hsl(342, 91%, 60%)
+}
+
+LightRed{
+#ff4d4d
+rgb(255, 77, 77)
+hsl(0, 100%, 65%)
+}
+
+DarkRed{
+#b30000
+rgb(179, 0, 0)
+hsl(0, 100%, 35%)
+}
+
+Green With Blue{
+#5ebdb6
+rgb(94, 189, 182)
+hsl(176, 42%, 55%)
+}
+*/
+
+/*
+
+////////////////////////General Settings////////////////////////
+
+Site Colors
+*/
+:root
+{
+	--or: #ff811a;
+	--pu: #f63c74;
+	--lr: #ff4d4d;
+	--dr: #b30000;
+	--gb: #5ebdb6;
+}
+
+/*Hyperlinks*/
+a
+{
+	text-decoration: none;
+	color: var(--pu);
+}
+a.active, a:hover
+{
+	color: var(--gb); 
+}
+
+/*Fonts*/
+@font-face
+{
+	font-family: others;
+	src: url("../font/others.ttf");
+}
+@font-face
+{
+	font-family: titles;
+	src: url("../font/titles.ttf");
+}
+
+/*Everything*/
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: others;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+/*Main Titles*/
+h1, h2, h3, h4, h5, h6, .title
+{
+	font-family: titles;
+	text-shadow: 2px 2px 2px black;
+}
+
+/*Paragraphs*/
+p
+{
+	font-size: 1.3em;
+	word-spacing: -4px;
+	text-shadow: 2px 2px 2px black;
+}
+/*Hole things container*/
+.Content
+{
+	position: fixed; 
+	width: 100%;
+}
+
+/*///////////////////////////Contents///////////////////////////*/
+.contents
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+/*first one*/
+.firstLogoC
+{
+	background: #fff;
+	z-index: 10;
+	width: 100%;
+}
+#firstLogo
+{
+	padding: 10px 0;
+}
+/*second one*/
+.secondCon
+{
+	z-index: 3;
+	background-image: url("../img/Content-1.jpg");
+	background-position: center; 
+}
+#head1, #parg1
+{
+	padding: 10px;
+	text-align: center; 
+	color: #fff;
+}
+/*third one*/
+.thirdCon
+{
+	z-index: 4;
+	background: url("../img/Content-2.jpg");
+	background-position: center; 
+	box-shadow: 0 5px 20px 5px black;
+}
+#parg2, #head2
+{
+	position: relative;
+	padding: 10px 60px;
+	box-sizing: initial;
+	color: #fff;
+}
+/*fourth one*/
+.fourthCon
+{
+	z-index: 5;
+	background: url("../img/Content-3.jpg");
+	background-position: center;
+	color: #fff;
+}
+.fourthConChild
+{
+	position: absolute;
+	padding: 20px;
+	bottom: 10%;
+}
+#parg3, #head3
+{
+	padding: 5px 0;
+}
+#logo2
+{
+	mix-blend-mode: saturation;
+}
+/*fifth one*/
+.fifthCon
+{
+	z-index: 7;
+	background: url("../img/Content-4.jpg");
+	background-position: center;
+	color: #fff;
+	box-shadow: 0 5px 20px 5px black;
+}
+#parg4, #head4
+{
+	padding: 5px 60px;
+	color: #fff;
+}
+#paleLogoName
+{
+	position: absolute;
+	width: 100%;
+	bottom: 10%;
+	z-index: -1;
+}
+/*sixth one*/
+.sixthCon
+{
+	z-index: 9;
+	background: url("../img/Content-5.jpg");
+	background-position: center;
+	color: #fff;
+	box-shadow: 0 -5px 20px 5px black;
+}
+.sixthConChild
+{
+	position: absolute;
+	padding: 5px 60px;
+	bottom: 10%;
+}
+/*last one*/
+.lastCon
+{
+	z-index: 6;
+	background: url("../img/lastContent.jpg");
+	background-position: center;
+	color: #fff;
+}
+#fade
+{
+	font-size: 3em;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+}
+/*last black fade*/
+#lastFade
+{
+	position: fixed;
+	width: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	z-index: 11;
+}
+#lastLogo
+{
+	width: 100%;
+}
+
+/*///////////////////////////Particles///////////////////////////*/
+#lastParticles
+{
+	position: fixed; 
+	top: 0;
+	left: 0;
+	z-index: 17;
+	height: 100%;
+	width: 100%;
+}
+
+/*////////////////////////Desktop View////////////////////////*/
+@media only screen and (min-width: 921px)
+{
+	#head1, #parg1, #head2, #parg2, #head3,
+	#parg3, #head4, #parg4, #head5, #parg5
+	{
+		font-size: 2em;
+		padding: 10px 120px;
+	}
+	#fade
+	{
+		font-size: 5em;
+	}
+}
+}
